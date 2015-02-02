@@ -13,6 +13,7 @@
 		0A5CCA191A3A364200E5989B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A5CCA181A3A364200E5989B /* Images.xcassets */; };
 		0A5CCA1C1A3A364200E5989B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A5CCA1A1A3A364200E5989B /* LaunchScreen.xib */; };
 		0A5CCA281A3A364200E5989B /* ScoreKeeperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5CCA271A3A364200E5989B /* ScoreKeeperTests.swift */; };
+		619DA6F51A6C9EE6001A9F34 /* ObjectiveCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 619DA6F41A6C9EE6001A9F34 /* ObjectiveCViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,8 @@
 		0A5CCA211A3A364200E5989B /* ScoreKeeperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScoreKeeperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A5CCA261A3A364200E5989B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A5CCA271A3A364200E5989B /* ScoreKeeperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreKeeperTests.swift; sourceTree = "<group>"; };
+		619DA6F31A6C9EE6001A9F34 /* ObjectiveCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectiveCViewController.h; sourceTree = "<group>"; };
+		619DA6F41A6C9EE6001A9F34 /* ObjectiveCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectiveCViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,8 @@
 				0A5CCA131A3A364200E5989B /* ViewController.swift */,
 				0A5CCA151A3A364200E5989B /* Main.storyboard */,
 				0A5CCA181A3A364200E5989B /* Images.xcassets */,
+				619DA6F31A6C9EE6001A9F34 /* ObjectiveCViewController.h */,
+				619DA6F41A6C9EE6001A9F34 /* ObjectiveCViewController.m */,
 				0A5CCA1A1A3A364200E5989B /* LaunchScreen.xib */,
 				0A5CCA0F1A3A364200E5989B /* Supporting Files */,
 			);
@@ -214,6 +219,7 @@
 			files = (
 				0A5CCA141A3A364200E5989B /* ViewController.swift in Sources */,
 				0A5CCA121A3A364200E5989B /* AppDelegate.swift in Sources */,
+				619DA6F51A6C9EE6001A9F34 /* ObjectiveCViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,9 +342,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ScoreKeeper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -346,6 +354,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ScoreKeeper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -405,6 +414,7 @@
 				0A5CCA2D1A3A364200E5989B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A5CCA2E1A3A364200E5989B /* Build configuration list for PBXNativeTarget "ScoreKeeperTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +423,7 @@
 				0A5CCA301A3A364200E5989B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
